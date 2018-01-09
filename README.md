@@ -1,4 +1,5 @@
 # use-node-basis
+#注释：此项目是nodejs项目
 
 （1）新建目录,clone到本地
 
