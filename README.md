@@ -2,10 +2,13 @@
 
 （1）新建目录,clone到本地
 
-（2）进入目录,运行明
+（2）进入目录,运行命令如下：
 
     npm install
-    安装依赖包(node-basis)
+    
+    //安装依赖包(node-basis)
     
     
- (3)运行命令 npm start
+ (3)运行命令 
+    npm start
+    
