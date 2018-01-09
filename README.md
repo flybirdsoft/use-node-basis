@@ -5,7 +5,6 @@
 （2）进入目录,运行命令如下：
 
     npm install
-    
     //安装依赖包(node-basis)
     
     
