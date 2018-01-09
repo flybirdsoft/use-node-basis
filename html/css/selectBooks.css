@@ -1,0 +1,180 @@
+﻿/*
+write by wuweiwei
+www.github.com/flybirdsoft
+*/
+body{
+	margin-top:0;
+	margin-left:0;
+	margin-right: 0;
+	margin-bottom:0;
+	background-color: #FFF;
+	font-family: "Microsoft YaHei";
+	font-size:14px;
+}
+dl,dd,dt{
+	padding: 0;
+	margin:0;
+}
+.fl{
+	float:left;
+}
+.fr{
+	float: right;
+}
+dl.top{
+	height: 475px;
+	background-color: #0CBFFF;
+	overflow: hidden;
+	background-image: url(../images/autotax-topbg.png);
+	background-position: center top;
+	background-repeat: no-repeat;
+}
+dl.top dt.title{
+	background-image: url(../images/autotax-titleCaption.png);
+	height: 87px;
+	width: 400px;
+	margin:0 auto;
+	margin-top: 26px;
+}
+dl.top dt.title{
+	margin-bottom: 15px;
+}
+dl.top dd{
+	width: 50%;
+	float: left;
+}
+dl.top dd span.computer-1{
+	background-image: url(../images/autotax-computer-1.png);
+	display: block;
+	width: 286px;
+	height: 255px;
+	margin-right: 78px;
+}
+dl.top dd span.computer-2{
+	background-image: url(../images/autotax-computer-2.png);
+	display: block;
+	width: 310px;
+	height: 255px;
+	margin-left: 78px;
+}
+dl.top dd label{
+	background-image: url(../images/autotax-whiteDot.png);
+	display: block;
+	background-repeat: no-repeat;
+	background-position: 0px center;
+	padding-left:20px;
+	margin-top:40px;
+	color:#FFF;
+	font-size:18px;
+}
+dl.top dd label.textA{
+	position: relative;
+	left:-20px;
+}
+dl.top dd label.textB{
+	margin-left: 90px;
+}
+.booksCaption{
+	color: #666;
+	width: 460px;
+	font-size: 16px;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+.pageContent{
+	width: 460px;
+	margin: 0 auto;
+	color:#909090;
+}
+.pageContent dt{
+	height: 55px;
+	line-height: 55px;
+	cursor: pointer;
+}
+.pageContent dt.select{
+}
+.pageContent dt span{
+	display: block;
+	float: left;
+	width:16px;
+	height: 16px;
+	margin-right: 10px;
+	background-image: url(../images/autotax-radio.png);
+	background-position: 0px center;
+	height: 55px;
+	background-repeat: no-repeat;
+}
+.pageContent dt.select span{
+	display: block;
+	float: left;
+	width:16px;
+	height: 16px;
+	margin-right: 10px;
+	background-image: url(../images/autotax-radio-select.png);
+	background-position: 0px center;
+	height: 55px;
+	background-repeat: no-repeat;
+}
+.pageContent dd.booksList{
+	width:440px;
+	overflow: hidden;
+	height: auto;
+	margin-left:15px;
+	display: none;
+}
+.pageContent dd.booksList label{
+	cursor: pointer;
+	border:1px solid #ddd;
+	min-height: 20px;
+	max-height: 40px;
+	display: block;
+	line-height: 20px;
+	max-width: 428px;
+	min-width: 78px;
+	float: left;
+	margin-left:10px;
+	margin-bottom: 10px;
+	padding-left:10px;
+	padding-right: 10px;
+	padding-top:7px;
+	padding-bottom: 7px;
+}
+
+.pageContent dd.booksList label.select{
+	border:1px solid #93d200;
+	position: relative;
+}
+.pageContent dd.booksList label.select span{
+	background-image:url(../images/autotax-icon-right.png);
+	width: 25px;
+	height: 23px;
+	display: block;
+	position: absolute;
+	bottom:0;
+	right: 0;
+}
+.submitContent{
+	margin-top: 20px;
+	margin-bottom: 150px;
+}
+.submit{
+	cursor: pointer;
+	display: block;
+	background-image: url(../images/autotax-submit.png);
+	width: 300px;
+	height: 40px;
+	margin: 0 auto;
+	line-height: 40px;
+	color:#FFF;
+	text-align: center;
+}
+.submit:hover{
+	display: block;
+	background-image: url(../images/autotax-submit-hover.png);
+	width: 300px;
+	height: 40px;
+	margin: 0 auto;
+	line-height: 40px;
+	color:#FFF;
+	text-align: center;
+}

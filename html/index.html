@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<meta charset="utf-8"/>
+<head>
+
+</head>
+<body>
+<h2>
+Basis 是一个基于 Node.js 平台的极简、灵活的 web 应用开发框架，它提供静态文件处理，http请求管理，快速开发restful API。
+</h2>
+<HR>
+<h3>localhost:3000/api/:id/:version <button id="btn_openUrl">点击测试接口</button></h3>
+<h3>
+	<a href="http://localhost:3000/html/selectBooks.html" target="_blank">
+		浏览静态页面 localhost:3000/html/selectBooks.html
+	</a>
+</h3>
+<button id="btn_send">ajax请求</button>
+
+</body>
+</html>
+<script type="text/javascript" src="/html/js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript">
+
+$(function(){
+	$("#btn_send").on("click",function(){
+		$.ajax({
+			url:"/restful/info", /*app.js 里的接口*/
+			type:"get",
+			dataType:"json",
+			success:function(data){
+				alert("返回的JSON数据："+JSON.stringify(data));
+				console.log(data);
+			}
+		});
+	});
+
+	$("#btn_openUrl").on("click",function(){
+		location.href = "http://localhost:3000/api/001/0.1.1";
+	});	
+});
+
+</script>
