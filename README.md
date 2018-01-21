@@ -6,7 +6,8 @@
 （2）进入目录,运行命令如下：
 
     npm install
-    //安装依赖包(node-basis) ,node-basis是本人开发的可以替代Express插件的包
+    
+    npm install 会安装node-basis依赖包 ,node-basis是本人开发的可以替代Express包
     
     
  (3)运行命令 
