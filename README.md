@@ -1,4 +1,6 @@
 # use-node-basis
+作者：邬畏畏
+
 注释：此项目是 nodejs 项目
 
 （1）先把项目clone到本地
