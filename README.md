@@ -14,4 +14,6 @@
     
  (3)运行命令 
     npm start
-    
+    
+## 效果截图
+1.![node-basis](http://images.cnblogs.com/cnblogs_com/wsoft/1151686/o_node-basis-1.jpg "node-basis")
