@@ -1,7 +1,7 @@
 # use-node-basis
-注释：此项目是nodejs项目
+注释：此项目是 nodejs 项目
 
-（1）新建目录,clone到本地
+（1）先把项目clone到本地
 
 （2）进入目录,运行命令如下：
 
