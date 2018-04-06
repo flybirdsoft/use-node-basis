@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>my.node文件</title>
+</head>
+<body>
+<!--tplData is tpl.assign() in app.js-->
+<ul>
+	<%var items = tplData.items;%>
+	<%var students = tplData.students;%>
+
+	<% for(var i in items){ %>
+		<li class="<%= items[i].status %>">
+		<%= items[i].text %>
+		</li>
+	<% } %>
+</ul>
+
+<div>学生信息</div>
+<table border="1">
+	<tr>
+		<td>姓名</td>
+		<td>年龄</td>
+	</tr>
+	<% for(var i in students){ %>
+	<tr>
+		<td><%= students[i].name%></td>
+		<td><%= students[i].age%></td>
+	</tr>
+	<% } %>
+</table>
+
+</body>
+</html>
