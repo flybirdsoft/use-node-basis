@@ -1,25 +1,35 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <meta charset="utf-8"/>
 <head>
-
+	<title>Basis开发框架</title>
 </head>
 <body>
 <h2>
-Basis 是一个基于 Node.js 平台的极简、灵活的 web 应用开发框架，它提供静态文件处理，http请求管理，快速开发restful API。
-</h2>
+node-basis 是一个基于 Node.js 平台的极简、灵活的 web 应用开发框架</h2>
+<h3>
+1.node-basis提供静态文件处理;<br>
+2.http请求管理;<br>
+3.快速开发restful API;<br>
+4.node-basis@1.0.4 版本开始有模板引擎;<br>
+</h3>
 <HR>
 <h3>localhost:3000/api/:id/:version <button id="btn_openUrl">点击测试接口</button></h3>
-<h3>
+<h4>
 	<a href="http://localhost:3000/html/selectBooks.html" target="_blank">
 		浏览静态页面 localhost:3000/html/selectBooks.html
 	</a>
-</h3>
+</h4>
+<h4>
+	<a href="http://localhost:3000/html/my.node" target="_blank">
+		浏览动态页面 localhost:3000/html/my.node
+	</a>
+</h4>
 <button id="btn_send">ajax请求</button>
 
 </body>
 </html>
-<script type="text/javascript" src="/html/js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="/html/js/jquery-3.1.1.min.js"></script>
 <script type="text/javascript">
 
 $(function(){
@@ -31,7 +41,7 @@ $(function(){
 			success:function(data){
 				alert("返回的JSON数据："+JSON.stringify(data));
 				console.log(data);
-			}
+			} 
 		});
 	});
 
