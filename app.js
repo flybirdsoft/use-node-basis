@@ -13,6 +13,8 @@ basis.setRouter({
 	"interface":"/restful/info"
 });
 
+//basis.set404(".html/404.html");
+
 basis.setFilter({
 	"myfileController" : "./html/my.node"
 });
