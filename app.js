@@ -1,4 +1,4 @@
-﻿var basis = require("node-basis");
+var basis = require("node-basis");
 /*
 basis 是解决路由请求与处理，静态文件访问处理的组件。
 
@@ -13,6 +13,32 @@ basis.setRouter({
 	"interface":"/restful/info"
 });
 
+basis.setFilter({
+	"myfileController" : "./html/my.node"
+});
+
+basis.controller("myfileController",function(req,res,fileTpl){
+	/*fileTpl is file html*/
+	var tpl = new basis.template();
+	var data = {
+		students : [
+			{name:"张雨",age:"22"},
+			{name:"刘1强",age:"23"},
+			{name:"刘34强",age:"26"},
+			{name:"王懂",age:"27"},
+		],
+		items:[
+    		{ text: 'text1' ,status:'done' },
+    		{ text: 'text2' ,status:'pending' },
+    		{ text: 'text3' ,status:'pending' },
+    		{ text: 'text4' ,status:'processing'}
+		]
+	}
+	tpl.assign("tplData",data);
+	//tpl.response = res;
+	//tpl.render(fileTpl);
+	tpl.render(fileTpl,res);
+});
 
 basis.controller("controllerName1",function(req,res,argv){
 	res.writeHead(200,{'content-type':'text/html'});
@@ -46,4 +72,4 @@ basis.controller("interface",function(req,res){
 	res.end();
 });
 //basis.port = 3000;
-basis.run(3000);
+basis.start(3000);
